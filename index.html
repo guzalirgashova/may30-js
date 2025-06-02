@@ -62,7 +62,6 @@
 // function fn (a){
   //  return a
 //}
-    
 //console.log (false !== !true === fn( true)) //false
 // console.log (false !== !true === fn( false)) //true
 
@@ -96,16 +95,28 @@
 //   return a-b
 //}
 
-function fn( functionName, a, b){
-   const add=null
-return functionName (a, b)
+//function fn( x, a, b, c){
+//return  a(b, c)
+//}
+//console.log(fn( console.log, add, 2, 3)) //5
+
+//function add (a, b){
+//return a+b
+//}
+
+
+//new task
+function fn( a, b, c, d){
+return  a(b(c, d))
 }
-console.log(fn( console.log, add, 2, 3)) //5
-function add(a, b){
+fn(console.log, add, 2, 3) //5
+fn(console.log, sub, 2, 3) //-1
+function add (a, b){
    return a+b
-   
 }
-function ()
+function sub (a, b){
+   return a-b
+}
 </script>
 </body>
 </html>
